@@ -2,20 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- macOS requires Finder Sync app extensions to remain sandboxed. -->
     <key>com.apple.security.app-sandbox</key>
     <true/>
-    <key>com.apple.security.files.user-selected.read-write</key>
-    <true/>
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.example.SuperRight</string>
+    </array>
+    <!-- Direct-distribution build: operate on the real Finder filesystem. -->
     <key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
     <array>
         <string>/</string>
-    </array>
-    <key>com.apple.security.temporary-exception.apple-events</key>
-    <array>
-        <string>com.apple.Terminal</string>
-        <string>com.googlecode.iterm2</string>
-        <string>com.microsoft.VSCode</string>
-        <string>dev.warp.Warp-Stable</string>
     </array>
 </dict>
 </plist>

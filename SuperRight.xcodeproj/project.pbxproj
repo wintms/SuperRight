@@ -1,8 +1,9 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {};
-	objectVersion = 77;
+	classes = {
+	};
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +15,27 @@
 		A10000000000000000000006 /* MonitoringConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* MonitoringConfiguration.swift */; };
 		A10000000000000000000007 /* MonitoringConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* MonitoringConfiguration.swift */; };
 		A10000000000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* Assets.xcassets */; };
+		A10000000000000000000009 /* FileCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* FileCreator.swift */; };
+		A1000000000000000000000D /* FileCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* FileCreatorTests.swift */; };
+		A1000000000000000000000E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A60000000000000000000009 /* Localizable.strings */; };
+		A1000000000000000000000F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A60000000000000000000009 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A30000000000000000000001 = {isa = PBXContainerItemProxy; containerPortal = A90000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A80000000000000000000002; remoteInfo = SuperRightFinder; };
+		A30000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80000000000000000000002;
+			remoteInfo = SuperRightFinder;
+		};
+		A30000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80000000000000000000001;
+			remoteInfo = SuperRight;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +44,9 @@
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
-			files = (A10000000000000000000005 /* SuperRightFinder.appex in Embed App Extensions */, );
+			files = (
+				A10000000000000000000005 /* SuperRightFinder.appex in Embed App Extensions */,
+			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,112 +65,477 @@
 		A2000000000000000000000A /* SuperRightFinder.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SuperRightFinder.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2000000000000000000000B /* MonitoringConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringConfiguration.swift; sourceTree = "<group>"; };
 		A2000000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000000000000000000000D /* FileCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCreatorTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000000E /* SuperRightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperRightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000000000000000000000F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A20000000000000000000010 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A50000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A50000000000000000000002 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A50000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A60000000000000000000001 = {
 			isa = PBXGroup;
-			children = (A60000000000000000000002 /* SuperRight */, A60000000000000000000006 /* Products */, );
+			children = (
+				A60000000000000000000002 /* SuperRight */,
+				A60000000000000000000008 /* SuperRightTests */,
+				A60000000000000000000006 /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 		A60000000000000000000002 /* SuperRight */ = {
 			isa = PBXGroup;
-			children = (A60000000000000000000003 /* App */, A60000000000000000000004 /* FinderExtension */, A60000000000000000000007 /* Shared */, A60000000000000000000005 /* Resources */, );
+			children = (
+				A60000000000000000000003 /* App */,
+				A60000000000000000000004 /* FinderExtension */,
+				A60000000000000000000007 /* Shared */,
+				A60000000000000000000005 /* Resources */,
+			);
 			path = SuperRight;
 			sourceTree = "<group>";
 		};
-		A60000000000000000000003 /* App */ = {isa = PBXGroup; children = (A20000000000000000000001, A20000000000000000000002, ); path = App; sourceTree = "<group>"; };
-		A60000000000000000000004 /* FinderExtension */ = {isa = PBXGroup; children = (A20000000000000000000003, A20000000000000000000004, ); path = FinderExtension; sourceTree = "<group>"; };
-		A60000000000000000000005 /* Resources */ = {isa = PBXGroup; children = (A2000000000000000000000C, A20000000000000000000005, A20000000000000000000006, A20000000000000000000007, A20000000000000000000008, ); path = Resources; sourceTree = "<group>"; };
-		A60000000000000000000006 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000009, A2000000000000000000000A, ); name = Products; sourceTree = "<group>"; };
-		A60000000000000000000007 /* Shared */ = {isa = PBXGroup; children = (A2000000000000000000000B, ); path = Shared; sourceTree = "<group>"; };
+		A60000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* SuperRightApp.swift */,
+				A20000000000000000000002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A60000000000000000000004 /* FinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000003 /* FinderSync.swift */,
+				A20000000000000000000004 /* FileCreator.swift */,
+			);
+			path = FinderExtension;
+			sourceTree = "<group>";
+		};
+		A60000000000000000000005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000C /* Assets.xcassets */,
+				A60000000000000000000009 /* Localizable.strings */,
+				A20000000000000000000005 /* AppInfo.plist */,
+				A20000000000000000000006 /* FinderExtensionInfo.plist */,
+				A20000000000000000000007 /* SuperRight.entitlements */,
+				A20000000000000000000008 /* FinderExtension.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A60000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000009 /* SuperRight.app */,
+				A2000000000000000000000A /* SuperRightFinder.appex */,
+				A2000000000000000000000E /* SuperRightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60000000000000000000007 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000B /* MonitoringConfiguration.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A60000000000000000000008 /* SuperRightTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000D /* FileCreatorTests.swift */,
+			);
+			path = SuperRightTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		A80000000000000000000001 /* SuperRight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB0000000000000000000002;
-			buildPhases = (A70000000000000000000001, A50000000000000000000001, A70000000000000000000003, A40000000000000000000001, );
-			buildRules = ();
-			dependencies = (AA0000000000000000000001, );
+			buildConfigurationList = AB0000000000000000000002 /* Build configuration list for PBXNativeTarget "SuperRight" */;
+			buildPhases = (
+				A70000000000000000000001 /* Sources */,
+				A50000000000000000000001 /* Frameworks */,
+				A70000000000000000000003 /* Resources */,
+				A40000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000000000000000000001 /* PBXTargetDependency */,
+			);
 			name = SuperRight;
 			productName = SuperRight;
-			productReference = A20000000000000000000009;
+			productReference = A20000000000000000000009 /* SuperRight.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A80000000000000000000002 /* SuperRightFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB0000000000000000000003;
-			buildPhases = (A70000000000000000000002, A50000000000000000000002, );
-			buildRules = ();
-			dependencies = ();
+			buildConfigurationList = AB0000000000000000000003 /* Build configuration list for PBXNativeTarget "SuperRightFinder" */;
+			buildPhases = (
+				A70000000000000000000002 /* Sources */,
+				A50000000000000000000002 /* Frameworks */,
+				A70000000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
 			name = SuperRightFinder;
 			productName = SuperRightFinder;
-			productReference = A2000000000000000000000A;
+			productReference = A2000000000000000000000A /* SuperRightFinder.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		A80000000000000000000003 /* SuperRightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0000000000000000000004 /* Build configuration list for PBXNativeTarget "SuperRightTests" */;
+			buildPhases = (
+				A70000000000000000000004 /* Sources */,
+				A50000000000000000000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = SuperRightTests;
+			productName = SuperRightTests;
+			productReference = A2000000000000000000000E /* SuperRightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A90000000000000000000001 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; TargetAttributes = {A80000000000000000000001 = {CreatedOnToolsVersion = 27.0; }; A80000000000000000000002 = {CreatedOnToolsVersion = 27.0; }; }; };
-			buildConfigurationList = AB0000000000000000000001;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A80000000000000000000001 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A80000000000000000000002 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A80000000000000000000003 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = A80000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = AB0000000000000000000001 /* Build configuration list for PBXProject "SuperRight" */;
 			compatibilityVersion = "Xcode 16.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
-			knownRegions = (en, Base, );
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
 			mainGroup = A60000000000000000000001;
-			productRefGroup = A60000000000000000000006;
+			productRefGroup = A60000000000000000000006 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-			targets = (A80000000000000000000001, A80000000000000000000002, );
+			targets = (
+				A80000000000000000000001 /* SuperRight */,
+				A80000000000000000000002 /* SuperRightFinder */,
+				A80000000000000000000003 /* SuperRightTests */,
+			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		A70000000000000000000001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000006, ); runOnlyForDeploymentPostprocessing = 0; };
-		A70000000000000000000002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000003, A10000000000000000000004, A10000000000000000000007, ); runOnlyForDeploymentPostprocessing = 0; };
-/* End PBXSourcesBuildPhase section */
-
 /* Begin PBXResourcesBuildPhase section */
-		A70000000000000000000003 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000008, ); runOnlyForDeploymentPostprocessing = 0; };
+		A70000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* Assets.xcassets in Resources */,
+				A1000000000000000000000E /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000F /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXSourcesBuildPhase section */
+		A70000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* SuperRightApp.swift in Sources */,
+				A10000000000000000000002 /* ContentView.swift in Sources */,
+				A10000000000000000000006 /* MonitoringConfiguration.swift in Sources */,
+				A10000000000000000000009 /* FileCreator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000003 /* FinderSync.swift in Sources */,
+				A10000000000000000000004 /* FileCreator.swift in Sources */,
+				A10000000000000000000007 /* MonitoringConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000D /* FileCreatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin PBXTargetDependency section */
-		AA0000000000000000000001 = {isa = PBXTargetDependency; target = A80000000000000000000002; targetProxy = A30000000000000000000001; };
+		AA0000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80000000000000000000002 /* SuperRightFinder */;
+			targetProxy = A30000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		AA0000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80000000000000000000001 /* SuperRight */;
+			targetProxy = A30000000000000000000002 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		A60000000000000000000009 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2000000000000000000000F /* en */,
+				A20000000000000000000010 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		AC0000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)", ); MACOSX_DEPLOYMENT_TARGET = 15.0; ONLY_ACTIVE_ARCH = YES; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; };
+		AC0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
 			name = Debug;
 		};
-		AC0000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; MACOSX_DEPLOYMENT_TARGET = 15.0; SDKROOT = macosx; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; };
+		AC0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
 			name = Release;
 		};
-		AC0000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/SuperRight.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SuperRight/Resources/AppInfo.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; };
+		AC0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/SuperRight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = 69WXSFCA7B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SuperRight/Resources/AppInfo.plist;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
 			name = Debug;
 		};
-		AC0000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/SuperRight.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SuperRight/Resources/AppInfo.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; };
+		AC0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/SuperRight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = 69WXSFCA7B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SuperRight/Resources/AppInfo.plist;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
 			name = Release;
 		};
-		AC0000000000000000000005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/FinderExtension.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SuperRight/Resources/FinderExtensionInfo.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight.FinderExtension; PRODUCT_NAME = SuperRightFinder; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; };
+		AC0000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/FinderExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = 69WXSFCA7B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SuperRight/Resources/FinderExtensionInfo.plist;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight.FinderExtension;
+				PRODUCT_NAME = SuperRightFinder;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
 			name = Debug;
 		};
-		AC0000000000000000000006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/FinderExtension.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SuperRight/Resources/FinderExtensionInfo.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight.FinderExtension; PRODUCT_NAME = SuperRightFinder; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; };
+		AC0000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SuperRight/Resources/FinderExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = 69WXSFCA7B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SuperRight/Resources/FinderExtensionInfo.plist;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRight.FinderExtension;
+				PRODUCT_NAME = SuperRightFinder;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AC0000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69WXSFCA7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperRight.app/Contents/MacOS/SuperRight";
+			};
+			name = Debug;
+		};
+		AC0000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69WXSFCA7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SuperRightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperRight.app/Contents/MacOS/SuperRight";
+			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB0000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000001, AC0000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		AB0000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000003, AC0000000000000000000004, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		AB0000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000005, AC0000000000000000000006, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AB0000000000000000000001 /* Build configuration list for PBXProject "SuperRight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000000000000000000001 /* Debug */,
+				AC0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0000000000000000000002 /* Build configuration list for PBXNativeTarget "SuperRight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000000000000000000003 /* Debug */,
+				AC0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0000000000000000000003 /* Build configuration list for PBXNativeTarget "SuperRightFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000000000000000000005 /* Debug */,
+				AC0000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0000000000000000000004 /* Build configuration list for PBXNativeTarget "SuperRightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000000000000000000007 /* Debug */,
+				AC0000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 	};
 	rootObject = A90000000000000000000001 /* Project object */;
