@@ -221,7 +221,7 @@ final class FinderSync: FIFinderSync {
         parent.image = NSImage(systemSymbolName: "doc.on.doc", accessibilityDescription: nil)
         let submenu = NSMenu(title: SRLocalized("复制路径"))
         submenu.addItem(actionItem(SRLocalized("复制绝对路径"), selector: #selector(copyAbsolutePaths(_:)), icon: "point.topleft.down.to.point.bottomright.curvepath", context: context))
-        submenu.addItem(actionItem(SRLocalized("复制文件名"), selector: #selector(copyFileNames(_:)), icon: "textformat", context: context))
+        submenu.addItem(actionItem(SRLocalized("复制文件名"), selector: #selector(copyFileNames(_:)), icon: "doc.text", context: context))
         submenu.addItem(actionItem(SRLocalized("复制相对路径"), selector: #selector(copyRelativePaths(_:)), icon: "arrow.triangle.branch", context: context))
         submenu.addItem(actionItem(SRLocalized("复制文件 URL"), selector: #selector(copyFileURLs(_:)), icon: "link", context: context))
         submenu.addItem(actionItem(SRLocalized("复制 Shell 路径"), selector: #selector(copyShellPaths(_:)), icon: "terminal", context: context))
