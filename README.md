@@ -1,4 +1,4 @@
-![Repository Icon](https://github.com/wintms/SuperRight/blob/main/SuperRight/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png)
+![Repository Icon](https://github.com/wintms/SuperRight/blob/main/SuperRight/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-256.png)
 # SuperRight
 
 SuperRight is a native, configurable macOS Finder Sync extension that adds practical actions to Finder's contextual menu.
